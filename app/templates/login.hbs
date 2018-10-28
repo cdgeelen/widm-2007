@@ -1,23 +1,17 @@
 {{#paper-form onSubmit=(action "login") as |form|}}
-  <div class="layout-row">
-    <div class="layout-column">
-      {{form.input
-        label="Username"
-        value=this.username
-        onChange=(action (mut this.username))
-        required=true
-      }}
-    </div>
-    <div class="layout-column">
-      {{form.input
-        label="Password"
-        value=this.password
-        onChange=(action (mut this.password))
-        required=true
-      }}
-    </div>
-  </div>
-  <div class="layout-row">
+  <div class="layout-column">
+    {{form.input
+      label="Username"
+      value=this.username
+      onChange=(action (mut this.username))
+      required=true
+    }}
+    {{form.input
+      label="Password"
+      value=this.password
+      onChange=(action (mut this.password))
+      required=true
+    }}
     {{#form.submit-button
       raised=true
       primary=true

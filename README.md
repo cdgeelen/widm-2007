@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/cdgeelen/widm-2007.svg?branch=master)](https://travis-ci.com/cdgeelen/widm-2007)
+
 # widm-2007
 
 This README outlines the details of collaborating on this Ember application.

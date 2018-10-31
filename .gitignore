@@ -3,6 +3,11 @@
 # compiled output
 /dist/
 /tmp/
+/firebase-deployment/
+
+# firebase specific
+.firebase/*
+.firebaserc
 
 # dependencies
 /bower_components/

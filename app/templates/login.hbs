@@ -1,5 +1,5 @@
 {{#paper-form onSubmit=(action "login") as |form|}}
-  <div class="layout-column">
+  <div class="layout-column" data-test-login>
     {{form.input
       label="Username"
       value=this.username

@@ -13,14 +13,5 @@ module('Integration | Component | red-screen', function(hooks) {
     await render(hbs`{{red-screen}}`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#red-screen}}
-        template block text
-      {{/red-screen}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

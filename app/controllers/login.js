@@ -13,10 +13,10 @@ export default Controller.extend({
   actions: {
     login() {
       this.session.authenticate(
-        'authenticator:widm',
-        this.username,
-        this.password
-      );
+        'authenticator:widm', {
+        username: this.username,
+        password: this.password
+      });
     }
   }
 });

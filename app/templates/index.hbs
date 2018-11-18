@@ -1,1 +1,7 @@
-{{outlet}}
+{{#paper-button raised=true onClick=(action (toggle "showRedScreen" this))}}
+  {{if this.showRedScreen "Hide" "Show"}} red screen (demo)
+{{/paper-button}}
+
+{{#if this.showRedScreen}}
+  <RedScreen/>
+{{/if}}

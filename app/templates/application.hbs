@@ -1,20 +1,18 @@
-<div class="ember-view">
-  {{#paper-toolbar}}
-    {{#paper-toolbar-tools}}
-      {{#paper-button iconButton=true}}
-        {{paper-icon "menu"}}
-      {{/paper-button}}
-      <h2>WIDM 2007</h2>
+{{#paper-toolbar}}
+  {{#paper-toolbar-tools}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "menu"}}
+    {{/paper-button}}
+    <h2>WIDM 2007</h2>
+    <span class="flex"></span>
+    {{#if this.session.isAuthenticated}}
+      <h2>Welcome!</h2>
       <span class="flex"></span>
-      {{#if this.session.isAuthenticated}}
-        <h2>Welcome!</h2>
-        <span class="flex"></span>
-      {{/if}}
-      {{#paper-button iconButton=true}}
-        {{paper-icon "favorite"}}
-      {{/paper-button}}
-    {{/paper-toolbar-tools}}
-  {{/paper-toolbar}}
+    {{/if}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "favorite"}}
+    {{/paper-button}}
+  {{/paper-toolbar-tools}}
+{{/paper-toolbar}}
 
-  {{outlet}}
-</div>
+{{outlet}}
